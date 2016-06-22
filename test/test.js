@@ -184,13 +184,14 @@ describe ('summation', function(){
 
 //// 1337 test
 
-var string = "im new number 5";
+var string = "you got rekt im haxor 5";
 string.replace(new RegExp("[0-9]", "g"), "1337")
 
 describe('1337 nonsense', function(){
   it('replace numbers with 1337', function(){
-    var string
+    var string = ('7')
+    var newString = string.replace(new RegExp("[0-9]", "g"), "1337")
 
-    expect(string).to.match('1337')
+    expect(newString).to.match('1337')
   })
 })
