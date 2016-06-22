@@ -165,6 +165,10 @@ describe('minus',function() {
     })
   })
 })
+
+
+////summation test
+
 var arr = [];
 var summation = arr.reduce((a, b) => a + b, 0);
 
@@ -174,13 +178,19 @@ describe ('summation', function(){
     var arr = [1,2,3]
     var answer = summation
 
-    expect(arr).to.be('6')
+    expect(answer).to.equal(6)
   })
 });
 
+//// 1337 test
+
+var string = "im new number 5";
+string.replace(new RegExp("[0-9]", "g"), "1337")
+
 describe('1337 nonsense', function(){
   it('replace numbers with 1337', function(){
+    var string
 
-    
+    expect(string).to.match('1337')
   })
 })
